@@ -37,7 +37,7 @@ export default function Person(race,item){
             case "Staff":
                 this.currenthealth += this.currenthealth / 100 * 20;
                 break;
-            case "Sword:
+            case "Sword":
                 break;
             case "Bow":
                 break;

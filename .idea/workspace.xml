@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9ca19e-e64d-46b7-b449-83fc6ac09135" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character.js" beforeDir="false" afterPath="$PROJECT_DIR$/character.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamedesings.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamedesings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,7 @@
   </component>
   <component name="ProjectId" id="1P3PFzqdzQvB82b15kr0pAN9Kjq" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -53,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565099706805</updated>
       <workItem from="1565099708018" duration="800000" />
+      <workItem from="1565126099463" duration="751000" />
     </task>
     <servers />
   </component>
@@ -64,7 +69,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
