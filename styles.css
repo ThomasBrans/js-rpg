@@ -8,4 +8,37 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #0d111d;
+} 
+.character1{
+    position: absolute;
+    left: 800px;
+    top: 400px;
+}
+.ch2{
+    position: absolute;
+    left: 400px;
+    top: 400px;
+}
+
+.chselect{
+    position: absolute;
+    left: 440px;
+    top: 300px;
+
+}
+.chselect2{
+    position: absolute;
+    left: 840px;
+    top: 300px;
+
+}
+#select1{
+    position: absolute;
+    top: 600px;
+    left: 450px;
+}
+#select2{
+    position: absolute;
+    top: 600px;
+    left: 850px;
 }
