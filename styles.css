@@ -1,0 +1,11 @@
+btn-start {
+    color: blue
+
+}
+
+body {
+    background-image: url(images/screen-choose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0d111d;
+}
