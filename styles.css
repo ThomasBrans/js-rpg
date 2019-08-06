@@ -1,44 +1,42 @@
-btn-start {
-    color: blue
 
-}
 
 body {
     background-image: url(images/screen-choose.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-color: #0d111d;
+    height: 100vh;
 } 
 .character1{
     position: absolute;
     left: 800px;
-    top: 400px;
+    top: 280px;
 }
 .ch2{
     position: absolute;
     left: 400px;
-    top: 400px;
+    top: 280px;
 }
 
 .chselect{
     position: absolute;
     left: 440px;
-    top: 300px;
+    top: 200px;
 
 }
 .chselect2{
     position: absolute;
     left: 840px;
-    top: 300px;
+    top: 200px;
 
 }
 #select1{
     position: absolute;
-    top: 600px;
+    top: 450px;
     left: 450px;
 }
 #select2{
     position: absolute;
-    top: 600px;
+    top: 450px;
     left: 850px;
 }

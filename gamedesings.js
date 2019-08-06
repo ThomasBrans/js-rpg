@@ -40,9 +40,10 @@ function myfunction2(){
 
 function startselector(p1,p2) {
     if(p1 === true && p2 === true) {
-        switch(p1)
+        switch(p1){
             case 1:
 
                 let Aperson = new Person("Humans", "Boots");
+        }
     }
 }
