@@ -3,8 +3,8 @@ import Person  from './character.js';
 let indexer = 1;
 var items1;
 var items2;
-var Person1;
-var Person2;
+var Person1 = "Human";
+var Person2 = "Human";
 
 
 let character1 = document.getElementById("character2");
