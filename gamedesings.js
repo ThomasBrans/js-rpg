@@ -22,32 +22,42 @@ let button2 =document.getElementById("button2");
 
 let select1 = document.getElementById("attackp1");
     select1.addEventListener("click", function() {
-    items1 = "attackp1";
+    items1 = "boots";
 } );
 
 let select2 = document.getElementById("healp1");
     select2.addEventListener("click", function() {
-    items1 = "healp1";
+    items1 = "staff";
 } );
 
 let select3 = document.getElementById("yeildp1");
     select3.addEventListener("click", function() {
-    items1 = "yeildp1";
+    items1 = "sword";
+} );
+
+let select7 = document.getElementById("bowp1");
+select7.addEventListener("click", function() {
+    items1 = "bow";
 } );
 
 let select4 = document.getElementById("attackp2");
     select4.addEventListener("click", function() {
-    items2 = "attackp2";
+    items2 = "boots";
 } );
 
 let select5 = document.getElementById("healp2");
     select5.addEventListener("click", function() {
-    items2 = "healp2";
+    items2 = "staff";
 } );
 
 let select6 = document.getElementById("yeildp2");
     select6.addEventListener("click", function() {
-    items2 = "yeildp2";
+    items2 = "sword";
+} );
+
+let select8 = document.getElementById("bowp2");
+select8.addEventListener("click", function() {
+    items2 = "bow";
 } );
 
 let button3 =document.getElementById("start");
@@ -90,7 +100,7 @@ function myfunction2(){
     indexerz = indexerz + 1
     if (indexerz === 5) { indexerz = 1; }
     character2.src = "images/character" + indexerz + ".png";
-    switch(indexer) {
+    switch(indexerz) {
         case 1:
             Person2 = "Human" ;
             break;
