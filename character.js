@@ -9,48 +9,76 @@ export default function Person(race,item){
     this.maxDamage = 20;
     this.maxHealing = 30;
 
-    this.initializePlayer = function() {
+    this.initializePlayer = function(anotherPlayer) {
       switch(race) {
           case "Humans":
-              this.maxDamage = 1;
+              anotherPlayer.totalDamage -= Math.floor((anotherPlayer.totalDamage/100)*20);
               break;
           case "Orcs":
-              this.maxHealth = 140;
+              this.maxHealth *= 1.4;
               break;
           case "Elves":
-              this.maxDamage = 10;
+              var reflect = Math.floor((Math.random() * 3) + 1);
+              console.log(reflect);
+              if(reflect === 1) {
+                  this.totalDamage = anotherPlayer.totalDamage
+                  anotherPlayer.totalDamage = 0;
+              } else {
+                  anotherPlayer.totalDamage -= Math.floor((anotherPlayer.totalDamage/100)*50);
+              }
               break;
           case "Vampires":
+              anotherPlayer.currenthealth -= Math.floor((anotherPlayer.currenthealth / 100) * 10);
+              this.currenthealth += Math.floor((this.currenthealth / 100) * 10);
+
               break;
 
       }
     };
 
-    this.handleItems = function() {
+    this.handleItems = function(anotherPlayer) {
         switch(item) {
-            case "Boots":
-                let d = Math.random();
-                if (d < 0.3) {
-
+            case "boots":
+                let dodge = Math.floor((Math.random() * 3) + 1);
+                console.log(reflect);
+                if(dodge === 1) {
+                    anotherPlayer.totalDamage = 0;
+                } else {
+                    anotherPlayer.totalDamage = anotherPlayer.damage();
                 }
                 break;
-            case "Staff":
-                this.currenthealth += this.currenthealth / 100 * 20;
+            case "staff":
+                let totalHealing = this.heal();
+                totalHealing += ((totalHealing / 100) * 20);
                 break;
-            case "Sword":
+            case "sword":
+                this.totalDamage = this.damage();
+                this.totalDamage += ((this.totalDamage / 100) * 30);
                 break;
-            case "Bow":
+            case "bow":
+                let doubleAttack = Math.floor((Math.random() * 3) + 1);
+                console.log(reflect);
+                if(doubleAttack === 1) {
+                    let attack1 = this.damage();
+                    let attack2 = this.damage();
+                    this.totalDamage = attack1 + attack2;
+                } else {
+                    this.totalDamage = this.damage();
+                }
                 break;
         }
 
     };
 
     this.heal = function() {
+        return Math.floor((Math.random() * 30) + 3);
 
 
 };
 
-    this.damage = function(){};
+    this.damage = function(){
+        return Math.floor((Math.random() * 20) + 3);
+    };
 
     this.totalDamage = this.damage();
 

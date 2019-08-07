@@ -22,12 +22,14 @@ body {
     position: absolute;
     left: 440px;
     top: 200px;
+    display: block;
 
 }
 .chselect2{
     position: absolute;
     left: 840px;
     top: 200px;
+    display:block;
 
 }
 #select1{
@@ -39,4 +41,16 @@ body {
     position: absolute;
     top: 450px;
     left: 850px;
+}
+
+.attackp1 {
+    display: block;
+}
+
+.healp1 {
+    display: block;
+}
+
+.yeildp1 {
+    display: block;
 }
