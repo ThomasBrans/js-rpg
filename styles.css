@@ -56,10 +56,10 @@ body {
     left: 400px;
     top: 450px;
 }
-}
+
 
 #yeildp1 {
-    display: block;
+
     position: absolute;
     left: 445px;
     top: 450px;
@@ -68,6 +68,35 @@ body {
 #bowp1 {
     position: absolute;
     left: 495px;
+    top: 450px;
+}
+
+
+#attackp2 {
+    display: block;
+    position: absolute;
+    left: 700px;
+    top: 450px;
+}
+
+#healp2 {
+    display: block;
+    position: absolute;
+    left: 750px;
+    top: 450px;
+}
+
+
+#yeildp2 {
+    display: block;
+    position: absolute;
+    left: 800px;
+    top: 450px;
+}
+
+#bowp2 {
+    position: absolute;
+    left: 850px;
     top: 450px;
 }
 
