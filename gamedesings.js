@@ -122,6 +122,7 @@ function startselector() {
     button1.style.display = "none";
     button1.style.display = "none";
     button2.style.display = "none";
+    button3.style.display = "none";
 
     select1.style.display = "none";
     select2.style.display = "none";
@@ -129,15 +130,70 @@ function startselector() {
     select4.style.display = "none";
     select5.style.display = "none";
     select6.style.display = "none";
+    select7.style.display = "none";
+    select8.style.display = "none";
+
    let Player1 = new Person(Person1,items1);
    let Player2 = new Person(Person2,items2);
    Player1.initializePlayer(Player2);
    Player2.initializePlayer(Player1);
     console.log(Player1);
     console.log(Player2);
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+    console.log(Player1.handleItems(Person2));
+    console.log(Player2.handleItems(Person1));
+    console.log(Player1.damage());
+    console.log(Player2.damage());
+
     console.log(Player1.damage());
     console.log(Player2.damage());
     console.log(Player1.damage());
     console.log(Player2.damage());
+
 
 }

@@ -4,7 +4,7 @@ export default function Person(race,item){
     this.item = item;
     this.currenthealth = 100;
     this.maxHealth = 100;
-
+    let reflect;
     this.min = 3;
     this.maxDamage = 20;
     this.maxHealing = 30;
@@ -18,10 +18,10 @@ export default function Person(race,item){
               this.maxHealth *= 1.4;
               break;
           case "Elves":
-              var reflect = Math.floor((Math.random() * 3) + 1);
+              reflect = Math.floor((Math.random() * 3) + 1);
               console.log(reflect);
               if(reflect === 1) {
-                  this.totalDamage = anotherPlayer.totalDamage
+                  this.totalDamage = anotherPlayer.totalDamage;
                   anotherPlayer.totalDamage = 0;
               } else {
                   anotherPlayer.totalDamage -= Math.floor((anotherPlayer.totalDamage/100)*50);
@@ -42,9 +42,9 @@ export default function Person(race,item){
                 let dodge = Math.floor((Math.random() * 3) + 1);
                 console.log(reflect);
                 if(dodge === 1) {
-                    anotherPlayer.totalDamage = 0;
+                    this.totalDamage = 0;
                 } else {
-                    anotherPlayer.totalDamage = anotherPlayer.damage();
+                    this.totalDamage = this.damage();
                 }
                 break;
             case "staff":
@@ -71,13 +71,16 @@ export default function Person(race,item){
     };
 
     this.heal = function() {
+        console.log(this.maxHealth);
         return Math.floor((Math.random() * 30) + 3);
+
 
 
 };
 
     this.damage = function(){
-        return Math.floor((Math.random() * 20) + 3);
+        console.log(this.currenthealth);
+        return this.currenthealth -= Math.floor((Math.random() * 20) + 3);
     };
 
     this.totalDamage = this.damage();

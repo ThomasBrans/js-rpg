@@ -43,14 +43,48 @@ body {
     left: 850px;
 }
 
-.attackp1 {
+#attackp1 {
     display: block;
+    position: absolute;
+    left: 350px;
+    top: 450px;
 }
 
-.healp1 {
+#healp1 {
     display: block;
+    position: absolute;
+    left: 400px;
+    top: 450px;
+}
 }
 
-.yeildp1 {
+#yeildp1 {
     display: block;
+    position: absolute;
+    left: 445px;
+    top: 450px;
+}
+
+#bowp1 {
+    position: absolute;
+    left: 495px;
+    top: 450px;
+}
+
+
+#heal1 {
+    display: none;
+}
+
+#heal2 {
+    display: none;
+
+}
+
+#attack1 {
+    display: none;
+}
+
+#attack2 {
+    display: none;
 }
