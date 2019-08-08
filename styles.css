@@ -100,20 +100,42 @@ body {
     top: 450px;
 }
 
+#start {
+    position: absolute;
+    left: 625px;
+    top: 525px;
+}
+
 
 #heal1 {
     display: none;
+    position: absolute;
+    left: 500px;
+    top: 525px;
 }
 
 #heal2 {
     display: none;
+    position: absolute;
+    left: 650px;
+    top: 525px;
 
 }
 
 #attack1 {
     display: none;
+    position: absolute;
+    left: 550px;
+    top: 525px;
 }
 
 #attack2 {
     display: none;
+    position: absolute;
+    left: 700px;
+    top: 525px;
+}
+
+#visual {
+    color:white;
 }

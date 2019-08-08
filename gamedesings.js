@@ -3,8 +3,8 @@ import Person  from './character.js';
 let indexer = 1;
 var items1;
 var items2;
-var Person1 = "Human";
-var Person2 = "Human";
+var Person1 = "Humans";
+var Person2 = "Humans";
 
 
 let character1 = document.getElementById("character2");
@@ -72,10 +72,9 @@ button3.addEventListener("click", startselector);
 
 
 
-
 function myfunction() {
 
-    indexer = indexer + 1;
+
     if (indexer === 5) { indexer = 1; }
     character1.src = "images/character" + indexer + ".png";
     switch(indexer) {
@@ -92,12 +91,13 @@ function myfunction() {
             Person1 = "Vampires";
             break;
     }
+    indexer = indexer + 1;
 }
 
 
 function myfunction2(){
 
-    indexerz = indexerz + 1
+
     if (indexerz === 5) { indexerz = 1; }
     character2.src = "images/character" + indexerz + ".png";
     switch(indexerz) {
@@ -114,6 +114,7 @@ function myfunction2(){
             Person2 = "Vampires";
             break;
     }
+    indexerz = indexerz + 1
 
 }
 
@@ -133,67 +134,61 @@ function startselector() {
     select7.style.display = "none";
     select8.style.display = "none";
 
-   let Player1 = new Person(Person1,items1);
-   let Player2 = new Person(Person2,items2);
+    let attack1 = document.getElementById("attack1");
+    attack1.style.display = "block";
+    let attack2 = document.getElementById("attack2");
+    attack2.style.display = "block";
+    let heal1 = document.getElementById("heal1");
+    heal1.style.display = "block";
+    let heal2 = document.getElementById("heal2");
+    heal2.style.display = "block";
+
+    let status = document.getElementById("visual");
+
+
+   var Player1 = new Person(Person1,items1);
+   var Player2 = new Person(Person2,items2);
    Player1.initializePlayer(Player2);
    Player2.initializePlayer(Player1);
-    console.log(Player1);
-    console.log(Player2);
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
 
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
+   attack1.addEventListener("click", function() {
+       Player1.handleItems(Person2);
+       Player2.handleItems(Person1);
+       Player1.damage();
 
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.handleItems(Person2));
-    console.log(Player2.handleItems(Person1));
-    console.log(Player1.damage());
-    console.log(Player2.damage());
 
-    console.log(Player1.damage());
-    console.log(Player2.damage());
-    console.log(Player1.damage());
-    console.log(Player2.damage());
+       status.innerHTML += Player1.currenthealth;
+       if (Player1.currenthealth <= 0) {
+           status.innerHTML = "Player1 Death";
+       }
+       if (Player2.currenthealth <= 0) {
+           status.innerHTML = "Player2 Death";
+       }
+   });
+    attack2.addEventListener("click", function() {
+        Player1.handleItems(Person2);
+        Player2.handleItems(Person1);
+        Player2.damage();
+
+        status.innerHTML += Player2.currenthealth;
+        if (Player1.currenthealth <= 0) {
+            status.innerHTML = "Player1 Death";
+        }
+        if (Player2.currenthealth <= 0) {
+            status.innerHTML = "Player2 Death";
+        }
+    });
+    heal1.addEventListener("click", function() {
+        Player1.handleItems(Person2);
+        Player2.handleItems(Person1);
+
+    });
+    heal2.addEventListener("click", function() {
+        Player1.handleItems(Person2);
+        Player2.handleItems(Person1);
+
+    });
+
 
 
 }

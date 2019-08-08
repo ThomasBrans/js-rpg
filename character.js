@@ -13,13 +13,14 @@ export default function Person(race,item){
       switch(race) {
           case "Humans":
               anotherPlayer.totalDamage -= Math.floor((anotherPlayer.totalDamage/100)*20);
+
               break;
           case "Orcs":
               this.maxHealth *= 1.4;
               break;
           case "Elves":
               reflect = Math.floor((Math.random() * 3) + 1);
-              console.log(reflect);
+
               if(reflect === 1) {
                   this.totalDamage = anotherPlayer.totalDamage;
                   anotherPlayer.totalDamage = 0;
@@ -57,7 +58,7 @@ export default function Person(race,item){
                 break;
             case "bow":
                 let doubleAttack = Math.floor((Math.random() * 3) + 1);
-                console.log(reflect);
+
                 if(doubleAttack === 1) {
                     let attack1 = this.damage();
                     let attack2 = this.damage();
@@ -71,7 +72,7 @@ export default function Person(race,item){
     };
 
     this.heal = function() {
-        console.log(this.maxHealth);
+
         return Math.floor((Math.random() * 30) + 3);
 
 
@@ -79,8 +80,8 @@ export default function Person(race,item){
 };
 
     this.damage = function(){
-        console.log(this.currenthealth);
-        return this.currenthealth -= Math.floor((Math.random() * 20) + 3);
+
+        return  this.currenthealth -= Math.floor((Math.random() * 20) + 3);
     };
 
     this.totalDamage = this.damage();
