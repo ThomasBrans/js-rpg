@@ -189,11 +189,13 @@ function startselector() {
     heal1.addEventListener("click", function() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
+        Player1.heal();
 
     });
     heal2.addEventListener("click", function() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
+        Player2.heal();
 
     });
 
