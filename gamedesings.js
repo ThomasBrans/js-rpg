@@ -164,6 +164,8 @@ function startselector() {
            status.innerHTML = "Player1 Death";
        }
        if (Player2.currenthealth <= 0) {
+           let def2 = document.getElementById("player2def");
+           def2.style.display = "block";
            status.innerHTML = "Player2 Death";
        }
    });
@@ -174,9 +176,13 @@ function startselector() {
 
         status.innerHTML += Player2.currenthealth;
         if (Player1.currenthealth <= 0) {
+            let def = document.getElementById("player1def");
+            def.style.display = "block";
             status.innerHTML = "Player1 Death";
         }
         if (Player2.currenthealth <= 0) {
+            let def2 = document.getElementById("player2def");
+            def2.style.display = "block";
             status.innerHTML = "Player2 Death";
         }
     });

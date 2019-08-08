@@ -142,5 +142,16 @@ body {
 
 #player1def {
     display: none;
-    background-image: url("images/defeateplayer1.png");
+    position: absolute;
+    left: 65px;
+    top: 50px;
+
+}
+
+#player2def {
+    display: none;
+    position: absolute;
+    left: 565px;
+    top: 50px;
+
 }
