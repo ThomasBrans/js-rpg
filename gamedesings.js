@@ -190,12 +190,14 @@ function startselector() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player1.heal();
+        status.innerHTML += Player2.currenthealth;
 
     });
     heal2.addEventListener("click", function() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player2.heal();
+        status.innerHTML += Player2.currenthealth;
 
     });
 
