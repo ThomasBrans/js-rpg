@@ -6,6 +6,7 @@ var items2;
 var Person1 = "Humans";
 var Person2 = "Humans";
 
+let bbody = document.getElementsByTagName("body");
 
 let character1 = document.getElementById("character2");
 
@@ -133,7 +134,7 @@ function startselector() {
     select6.style.display = "none";
     select7.style.display = "none";
     select8.style.display = "none";
-
+    bbody[0].style.backgroundImage = "url('images/screen-play.jpg')";
     let attack1 = document.getElementById("attack1");
     attack1.style.display = "block";
     let attack2 = document.getElementById("attack2");
@@ -160,7 +161,7 @@ function startselector() {
        Player2.damage();
 
 
-       healther1.innerHTML = Player1.currenthealth;
+       healther2.innerHTML = Player2.currenthealth;
        if (Player1.currenthealth <= 0) {
            let def = document.getElementById("player1def");
            def.style.display = "block";
@@ -177,7 +178,7 @@ function startselector() {
         Player2.handleItems(Person1);
         Player1.damage();
 
-        healther2.innerHTML = Player2.currenthealth;
+        healther1.innerHTML = Player1.currenthealth;
         if (Player1.currenthealth <= 0) {
             let def = document.getElementById("player1def");
             def.style.display = "block";
@@ -193,7 +194,7 @@ function startselector() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player1.heal();
-        healther1.innerHTML = Player1.currenthealth;
+        healther2.innerHTML = Player2.currenthealth;
         if (Player1.currenthealth <= 0) {
             let def = document.getElementById("player1def");
             def.style.display = "block";
@@ -210,7 +211,7 @@ function startselector() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player2.heal();
-        healther2.innerHTML = Player2.currenthealth;
+        healther1.innerHTML = Player1.currenthealth;
         if (Player1.currenthealth <= 0) {
             let def = document.getElementById("player1def");
             def.style.display = "block";
