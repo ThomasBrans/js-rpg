@@ -9,131 +9,131 @@ body {
 } 
 .character1{
     position: absolute;
-    left: 800px;
-    top: 280px;
+    left: 57%;
+    top: 40%;
 }
 .ch2{
     position: absolute;
-    left: 400px;
-    top: 280px;
+    left: 33%;
+    top: 40%;
 }
 
 .chselect{
     position: absolute;
-    left: 440px;
-    top: 200px;
+    left: 36%;
+    top: 30%;
     display: block;
 
 }
 .chselect2{
     position: absolute;
-    left: 840px;
-    top: 200px;
+    left: 60.4%;
+    top: 30%;
     display:block;
 
 }
 #select1{
     position: absolute;
-    top: 450px;
-    left: 450px;
+    top: 30%;
+    left: 40%;
 }
 #select2{
     position: absolute;
-    top: 450px;
-    left: 850px;
+    top: 39.1%;
+    left: 30%;
 }
 
 #attackp1 {
     display: block;
     position: absolute;
-    left: 350px;
-    top: 450px;
+    left: 30.9%;
+    top: 69.3%;
 }
 
 #healp1 {
     display: block;
     position: absolute;
-    left: 400px;
-    top: 450px;
+    left: 34.34%;
+    top: 69.30%;
 }
 
 
 #yeildp1 {
 
     position: absolute;
-    left: 445px;
-    top: 450px;
+    left: 37.4%;
+    top: 69.30%;
 }
 
 #bowp1 {
     position: absolute;
-    left: 495px;
-    top: 450px;
+    left: 41%;
+    top: 69.30%;
 }
 
 
 #attackp2 {
     display: block;
     position: absolute;
-    left: 700px;
-    top: 450px;
+    left:55.91%;
+    top: 69.30%;
 }
 
 #healp2 {
     display: block;
     position: absolute;
-    left: 750px;
-    top: 450px;
+    left: 59.34%;
+    top: 69.30%;
 }
 
 
 #yeildp2 {
     display: block;
     position: absolute;
-    left: 800px;
-    top: 450px;
+    left: 62.34%;
+    top: 69.30%;
 }
 
 #bowp2 {
     position: absolute;
-    left: 850px;
-    top: 450px;
+    left: 66%;
+    top: 69.30%;
 }
 
 #start {
     position: absolute;
-    left: 625px;
-    top: 525px;
+    left: 48.5%;
+    top: 81%;
 }
 
 
 #heal1 {
     display: none;
     position: absolute;
-    left: 500px;
-    top: 525px;
+    left: 34%;
+    top: 65%;
 }
 
 #heal2 {
     display: none;
     position: absolute;
-    left: 650px;
-    top: 525px;
+    left: 58%;
+    top: 65%;
 
 }
 
 #attack1 {
     display: none;
     position: absolute;
-    left: 550px;
-    top: 525px;
+    left: 38.5%;
+    top: 65%;
 }
 
 #attack2 {
     display: none;
     position: absolute;
-    left: 700px;
-    top: 525px;
+    left: 62.5%;
+    top: 65%;
 }
 
 #visual {
