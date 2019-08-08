@@ -73,7 +73,7 @@ export default function Person(race,item){
 
     this.heal = function() {
 
-        return Math.floor((Math.random() * 30) + 3);
+        return this.currenthealth += Math.floor((Math.random() * 30) + 3);
 
 
 

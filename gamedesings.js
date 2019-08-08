@@ -151,13 +151,16 @@ function startselector() {
    Player1.initializePlayer(Player2);
    Player2.initializePlayer(Player1);
 
+   let healther1 = document.getElementById("healther1");
+   let healther2 = document.getElementById("healther2");
+
    attack1.addEventListener("click", function() {
        Player1.handleItems(Person2);
        Player2.handleItems(Person1);
-       Player1.damage();
+       Player2.damage();
 
 
-       status.innerHTML += Player1.currenthealth;
+       healther1.innerHTML = Player1.currenthealth;
        if (Player1.currenthealth <= 0) {
            let def = document.getElementById("player1def");
            def.style.display = "block";
@@ -172,9 +175,9 @@ function startselector() {
     attack2.addEventListener("click", function() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
-        Player2.damage();
+        Player1.damage();
 
-        status.innerHTML += Player2.currenthealth;
+        healther2.innerHTML = Player2.currenthealth;
         if (Player1.currenthealth <= 0) {
             let def = document.getElementById("player1def");
             def.style.display = "block";
@@ -190,14 +193,34 @@ function startselector() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player1.heal();
-        status.innerHTML += Player2.currenthealth;
+        healther1.innerHTML = Player1.currenthealth;
+        if (Player1.currenthealth <= 0) {
+            let def = document.getElementById("player1def");
+            def.style.display = "block";
+            status.innerHTML = "Player1 Death";
+        }
+        if (Player2.currenthealth <= 0) {
+            let def2 = document.getElementById("player2def");
+            def2.style.display = "block";
+            status.innerHTML = "Player2 Death";
+        }
 
     });
     heal2.addEventListener("click", function() {
         Player1.handleItems(Person2);
         Player2.handleItems(Person1);
         Player2.heal();
-        status.innerHTML += Player2.currenthealth;
+        healther2.innerHTML = Player2.currenthealth;
+        if (Player1.currenthealth <= 0) {
+            let def = document.getElementById("player1def");
+            def.style.display = "block";
+            status.innerHTML = "Player1 Death";
+        }
+        if (Player2.currenthealth <= 0) {
+            let def2 = document.getElementById("player2def");
+            def2.style.display = "block";
+            status.innerHTML = "Player2 Death";
+        }
 
     });
 
