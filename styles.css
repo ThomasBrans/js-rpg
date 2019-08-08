@@ -143,31 +143,31 @@ body {
 #player1def {
     display: none;
     position: absolute;
-    left: 65px;
-    top: 50px;
+    left: 13%;
+    top: 19%;
 
 }
 
 #player2def {
     display: none;
     position: absolute;
-    left: 565px;
-    top: 50px;
+    left: 45%;
+    top: 19%;
 
 }
 
 #healther1 {
     position: absolute;
-    top: 200px;
-    left: 310px;
+    top: 30%;
+    left: 36.5%;
     color:white;
     font-size: 30px;
 }
 
 #healther2 {
     position: absolute;
-    top: 200px;
-    left: 950px;
+    top: 30%;
+    left: 61%;
     color:white;
     font-size: 30px;
 }
